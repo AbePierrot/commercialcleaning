@@ -1,0 +1,437 @@
+body {
+  margin: 0;
+  background: #fafafa;
+  height: 100%;
+  overflow: hidden;
+}
+
+#content-mobile {
+  display: none;
+}
+
+#content-desktop {
+  display: block;
+}
+
+@font-face {
+  /*https://cors-anywhere.herokuapp.com/ testing */
+  font-family: 'poetsen_oneregular';
+  src: url('https://cors-anywhere.herokuapp.com/https://www.ajcomclean.com/Font/poetsenone-regular-webfont.ttf') format('ttf'),
+    url('https://cors-anywhere.herokuapp.com/https://www.ajcomclean.com/Font/poetsenone-regular-webfont.woff2') format('woff2'),
+    url('https://cors-anywhere.herokuapp.com/https://www.ajcomclean.com/Font/poetsenone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'raspoutine_mediumitalic';
+  src: url('https://cors-anywhere.herokuapp.com/https://www.ajcomclean.com/Font/raspoutinemedium_tb-webfont.woff2') format('woff2'),
+    url('https://cors-anywhere.herokuapp.com/https://www.ajcomclean.com/Font/raspoutinemedium_tb-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*services page CSS*/
+.servicePageContactUsBtn:hover {
+  font-size: 2.7vw;
+}
+
+.firstColumnsOfServiceSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20.0vw;
+}
+
+.secondColumnsOfServiceSection {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20.0vw;
+}
+
+.serviceImageAndName {
+  position: relative;
+}
+
+.serviceNameText span {
+  position: absolute;
+  top: 110%;
+  font-size: 1.3vw;
+  font-family: 'raspoutine_mediumitalic';
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+
+.serviceImage {
+  position: relative;
+  height: 12vw;
+  width: 12vw;
+  border-radius: 50%;
+  padding: 1px 1px 1px 1px;
+}
+
+#commercialCleaningService {
+  background: url("../image/cleaning-service.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.commercialCleaningService span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+#nightlyOfficeCleaning {
+  background: url("../image/nightlyOfficeCleaning.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nightlyOfficeCleaning span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+#VCTFloorMaintenance {
+  background: url("../image/VCTFloorMaintenance.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.VCTFloorMaintenance span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+#postConstructionCleaning {
+  background: url("../image/postConstructionCleaning.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.postConstructionCleaning span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+#commercialCarpetCleaning {
+  background: url("../image/commercialCarpetCleaning.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.commercialCarpetCleaning span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+#greenOfficeCleaning {
+  background: url("../image/greenOfficeCleaning.png");
+  background-color: gray;
+  background-size: 70% 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.greenOfficeCleaning span {
+  position: absolute;
+  font-family: 'raspoutine_mediumitalic';
+}
+
+.servicePageBtn {
+  position: relative;
+}
+
+.contactUsBtnInServicePage {
+  position: absolute;
+  bottom: -5vh;
+  left: 30.2vw;
+}
+
+.servicePageContactUsBtn {
+  height: 8vh;
+  width: 15vw;
+  border-radius: 10vh;
+  border: none;
+  background-color: #ff005a;
+  font-family: 'raspoutine_mediumitalic';
+  font-size: 2.5vw;
+  text-align: center;
+  transition: font-size 200ms;
+}
+
+.servicesSection {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee;
+}
+
+.servicesSection {
+  width: 100vw;
+  height: 85vh;
+}
+
+.service {
+  position: relative;
+}
+
+.serviceBtn {
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+
+/*end of services page CSS*/
+
+
+
+/*index page CSS*/
+.sectionClass {
+  position: relative;
+}
+
+#pageBackgroundImage {
+  opacity: 0.37;
+  background-image: url("../image/commercialcleaning.jpg");
+  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: top bottom;
+}
+
+#textOverBackgroundImage {
+  position: absolute;
+  top: 25%;
+  left: 19%;
+  color: #ce272f;
+  font-size: 3.2vw;
+  font-family: 'poetsen_oneregular';
+  font-weight: bold;
+  animation: delayedShow ease-in 1.3s;
+}
+
+#secondTextOverBackgroundImage {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  color: #ce272f;
+  font-size: 1.90vw;
+  font-family: 'poetsen_oneregular';
+  margin-top: 30px;
+  font-weight: normal;
+  animation: delayedShow ease-in 1.3s;
+}
+
+@keyframes delayedShow {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.button {
+  order: 3;
+}
+
+.homepageButton {
+  position: absolute;
+  font-family: 'poetsen_oneregular';
+  font-size: 1.99vw;
+  text-align: center;
+  background-color: #FFFADA;
+  color: #ce272f;
+  border-radius: 18px;
+  border: none;
+  box-shadow: 6px 8px 7px rgba(0, 0, 0, 0.5);
+}
+
+button:focus {
+  outline: none;
+}
+
+#contactBtn {
+  top: 50.9vh;
+  left: 29vw;
+  height: 8%;
+  width: 15%;
+  transition: box-shadow 0.5s;
+}
+
+#contactBtn:hover {
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+#servicesBtn {
+  top: 50.9vh;
+  left: 48vw;
+  height: 8%;
+  width: 15%;
+  transition: box-shadow 0.5s;
+}
+
+#servicesBtn:hover {
+  box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*end of index CSS*/
+
+.imageContainer {
+  width: 100vw;
+  height: 85vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*header CSS*/
+.header {
+  order: 1;
+  height: 9vh;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+.logo {
+  order: 1;
+}
+
+.websitelogo {
+  width: 120px;
+  margin-left: 20px;
+}
+
+.navigation {
+  order: 2;
+}
+
+.navigationButtonList ul {
+  position: absolute;
+  left: 50%;
+  top: 2.5%;
+  transform: translate(-50%, -50%);
+  display: inline;
+  white-space: nowrap;
+}
+
+.navigationButtonList a {
+  text-decoration: none;
+  color: #ce272f;
+  font-size: 1.8vw;
+  margin-right: 2vw;
+  font-family: 'poetsen_oneregular';
+  font-weight: normal;
+  display: inline-block;
+}
+
+.navigationButtonList .current {
+  color: #ce272f;
+}
+
+.navigationButtonList .current::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: #ce272f;
+}
+
+.navigationButtonList li {
+  display: inline-block;
+}
+
+.linkAction::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #ce272f;
+}
+
+.linkAction:hover::after {
+  width: 100%;
+  transition: width .3s;
+}
+
+/*end of header CSS*/
+.section {
+  order: 2;
+  width: 100vw;
+  height: 85vh;
+}
+
+/*footer CSS*/
+.footer {
+  order: 3;
+  position: relative;
+  height: 6vh;
+  background-color: #e1e1e1;
+}
+
+.emailIcon {
+  position: absolute;
+  margin-left: 1.5vw;
+  height: 2.6vw;
+  width: 2.6vw;
+  top: 12%;
+  left: 8.5%;
+}
+
+.phoneIcon {
+  position: absolute;
+  margin-left: 4.2vw;
+  top: 1.2%;
+  left: 30%;
+  height: 3.2vw;
+  width: 3.2vw;
+}
+
+.emailAddress {
+  position: absolute;
+  font-family: 'poetsen_oneregular';
+  font-size: 1.5vw;
+  margin-left: 2.5vw;
+  top: 24%;
+  left: 11%;
+}
+
+.phoneNumber {
+  position: absolute;
+  font-family: 'poetsen_oneregular';
+  font-size: 1.7vw;
+  margin-left: 2.2vw;
+  top: 20%;
+  left: 36%
+}
+
+.contactInfoText {
+  font-family: 'poetsen_oneregular';
+  font-size: 1.5vw;
+  padding-left: 0.5vw;
+  position: absolute;
+  top: 22%;
+}
+
+/*end of Footer CSS*/
